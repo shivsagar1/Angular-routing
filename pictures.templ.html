@@ -1,0 +1,27 @@
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Action</th>
+        <th>Album ID</th>
+        <th>Id</th>
+        <th>Title</th>
+        <th>URL</th>
+        <th>thumbnail URl</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="pic in pictureListVm.picture|limitTo:15">
+        <td><a href="#/abc" ><span class="glyphicon glyphicon-remove"></span></a> </td>
+        <td>{{pic.albumId}}</td>
+        <td>{{pic.id}}</td>
+        <td>{{pic.title}}</td>
+        <td>{{pic.url}}</td>
+        <td>{{pic.thumbnailUrl}}</td>
+
+    </tr>
+
+
+    </tbody>
+
+</table>

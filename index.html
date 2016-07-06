@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html  ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="script.js"></script>
+    <script src = "users-list-controller.js"></script>
+    <script src = "pictures-controller.js"></script>
+    <script src = "data.service.js"></script>
+
+
+</head>
+
+<body >
+
+<header>
+    <nav class="container">
+        <ul class="nav nav-pills">
+            <li class="active"><a href="#/users" >Users</a></li>
+            <li class="success"><a href="#/pictures" >Pictures</a></li>
+        </ul>
+    </nav>
+</header>
+<section ng-view>
+
+</section>
+
+<footer>
+<p>&copy;2016 Rochester Institute of Technology</p>
+</footer>
+
+</body>
+</html>
